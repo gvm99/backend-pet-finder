@@ -26,14 +26,14 @@ yarn dev::server
 
 Nós temos as seguintes tabelas, com os seguintes campos:
 
-Usuários:
+### Usuários:
 * id : Id do Usuário
 * nome: Nome do Usuário
 * password: Senha encriptografada do Usuário
 * created_at: Data e Hora de quando o usuário foi criado.
 * updated_at: Data e Hora de quando o usuário foi atualizado.
 
-Endereço (Eu sei que no E-mail solicitava que o endereço deveria ser em uma string, mas para relacionar a cidade com o Animal, a string não funcionaria, além de um usuário poder ter mais de um endereço):
+### Endereço (Eu sei que no E-mail solicitava que o endereço deveria ser em uma string, mas para relacionar a cidade com o Animal, a string não funcionaria, além de um usuário poder ter mais de um endereço):
 
 * id : Id do Endereço
 * rua: Rua da Casa
@@ -45,7 +45,7 @@ Endereço (Eu sei que no E-mail solicitava que o endereço deveria ser em uma st
 * updated_at: Data e Hora de quando o endereço foi atualizado.
 * ativo: Define se é o endereço principal do Usuário.
 
-Animal:
+### Animal:
 * id : Id do Animal
 * usuario_criador_id : O usuário que está doando o cachorro
 * usuario_adotante_id : O usuário que adotou ou solicitou a adoção do cachorro
@@ -55,5 +55,7 @@ Animal:
 * idade: Idade do cachorro
 * cidade: Cidade do cachorro
 * aceitoCriador: Campo para validar a adoção por parte do doador.
+* created_at: Data e Hora de quando o animal foi criado.
+* updated_at: Data e Hora de quando o animal foi atualizado.
 
 
