@@ -58,4 +58,26 @@ Nós temos as seguintes tabelas, com os seguintes campos:
 * created_at: Data e Hora de quando o animal foi criado.
 * updated_at: Data e Hora de quando o animal foi atualizado.
 
+## Rotas do BACKEND
+Endpoint | MÉTODO | Autenticação necessária | Descrição
+--- | --- | --- | --- 
+/usuarios | POST | Não | Realiza o Cadastro dos Usuários
+/usuarios | GET | Sim | Retorna as informações do Usuário logado
+/session | POST | Não | Realiza o Login do usuário, seguindo o padrão Json Web Token.
+/endereco | POST | Sim | Realiza o Cadastro de Endereço e relaciona com o usuário logado.
+/endereco/principal | POST | Sim | Define o endereço principal para o usuário.
+/animais | POST | Sim | Realiza o cadastro de um Animal.
+/animais | GET | Não | Consulta os Animais disponíveis para adoção.
+/animais/:id | GET | Sim | Consulta um Animal por id.
+/animais/:id | DELETE | Sim | Deleta um Animal por id.
+/animais/update | POST | Sim | Realiza a atualização de um Animal.
+/animais/adotar | POST | Sim | Realiza a Adoção de um Animal.
+/animais/aprovar | POST | Sim | Realiza a Aprovação de um Animal.
+/animais/recusar | POST | Sim | Recusa a proposta de adoção de um Animal.
+/animais/lista/adotar | POST | Sim | Lista todos os pets disponíveis para adoção.
+/animais/lista/aprovar | POST | Sim | Lista todos os pets disponíveis para aprovação.
+/animais/lista/adotados | POST | Sim | Lista todos os pets adotados pelo usuário.
+/animais/lista/criados | POST | Sim | Lista todos os pets criados pelo usuário.
+
+
 
