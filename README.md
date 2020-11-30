@@ -58,7 +58,7 @@ Nós temos as seguintes tabelas, com os seguintes campos:
 * created_at: Data e Hora de quando o animal foi criado.
 * updated_at: Data e Hora de quando o animal foi atualizado.
 
-## Rotas do BACKEND
+## Rotas
 Endpoint | MÉTODO | Autenticação necessária | Descrição
 --- | --- | --- | --- 
 /usuarios | POST | Não | Realiza o Cadastro dos Usuários
